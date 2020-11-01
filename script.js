@@ -2,31 +2,26 @@
 var generateBtn = document.querySelector("#generate");
 
 
-//let charTypes = ["upper case", "lower case", "numeric", "special"];
+let writePassword = function() {
 
-let  charTypes = {
-  "upper case": "", 
-  "lower case": "",
-  "numeric": "",
-  "special": ""
-};
+  let  charTypes = {
+    "upper case": {required: "", possibleVals: "ABCDEFGHIJKLMNOPQRSTUVWXYZ"}, 
+    "lower case":  {required: "", possibleVals: "abcdefghijklmnopqrstuvwxyz"}, 
+    "numeric":  {required: "", possibleVals: "0123456789"}, 
+    "special":  {required: "", possibleVals: "<>@!#$%^&*()_+[]{}?:;|'\"\\,./~`-="}
+  };
+  
+  console.log(charTypes);
+  console.log("<>@!#$%^&*()_+[]{}?:;|'\"\\,./~`-=");
 
-console.log(charTypes);
-console.log("<>@!#$%^&*()_+[]{}?:;|'\"\\,./~`-=");
-
-let prompts = function() {
-window.alert("Password generator: You will be prompted answer yes or no ('Y' or 'N'), as whether the password generated requires each of the following types of text characters. \n  The password must contain at least one of the following types in order for the password to be generated successfully (upper case, lower case, number, special character (<>@!#$%^&*()_+[]{}?:;|'\"\\,./~`-=)");
-
-//let responseList = []; 
+window.alert("Password generator: You will be prompted answer yes or no ('Y' or 'N'), as whether the password generated requires each of the specified character types, as well as password length.");
 
   for(let i = 0; i < charTypes.length; i++) {
-
     let response = "";
-
     while(response != (toUpperCase("Y")) && response != (toUpperCase("N"))) {
-      response = prompt("Should  the password require at least " + charTypes[i]  + " character? (Enter Y or N) "); 
+      response = prompt("Should  the password require at least one " + charTypes[i]  + " character? (Enter Y or N) "); 
    }
- 
+   console.log(charTypes[i]);
 charTypes[i].value = response; 
 }
 
