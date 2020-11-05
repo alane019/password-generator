@@ -1,4 +1,4 @@
-# configurable-password-generator
+# Configurable Password Generator
 
 ## Description 
 
