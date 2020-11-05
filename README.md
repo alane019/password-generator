@@ -2,12 +2,11 @@
 
 ## Description 
 
-This is project includes a client-side javascript functionality that randomly generates a password which includes one to four required character types (upper case, lower case, numeric, and/or special characters). The user generating the password can specify the required character types (the page requires at least one of the four chacter types to be selected), as well as the password length, which must be between 8 and 128 characters). 
+Generates randomized password text at specified length, including specified character types (upper case, lower case, numeric, and/or special characters). Password length must be between 8 and 128 characters. Random string values are generated using javascript math.random is used for 
 
-If password value specified is a below the minimum, or above the maximum, the minimum or maximum value will be used to handle each invalid response, respectively.
+If password length submitted by user is below the required character minimum, or above the maximum, the minimum or maximum value will be used to handle each invalid response case, respectively.
 
-If the user does not confirm at least one of the four character types, all four character types will be included in the random character generation sequence. 
-
+If the user does not confirm at least one of the four character types, all four character types will be included in the random random character generation sequence. 
 
 ## Table of Contents
 
@@ -20,7 +19,6 @@ If the user does not confirm at least one of the four character types, all four 
 
 ## Examples
 Demo is viewable here: <https://alane019.github.io/password-generator>
-
 
 ## Screenshots
 
