@@ -2,11 +2,11 @@
 
 ## Description 
 
-Generates randomized password text at specified length, including specified character types (upper case, lower case, numeric, and/or special characters). Password length must be between 8 and 128 characters. Random string values are generated using javascript math.random is used for 
+Generates randomized password text at specified length, including specified character types (upper case, lower case, numeric, and/or special characters). Password length must be between 8 and 128 characters. Random string values are generated using javascript's math.random and math.floor.
 
 If password length submitted by user is below the required character minimum, or above the maximum, the minimum or maximum value will be used to handle each invalid response case, respectively.
 
-If the user does not confirm at least one of the four character types, all four character types will be included in the random random character generation sequence. 
+If the user does not confirm at least one of the four character types, all four character types will be included as possibilities. 
 
 ## Table of Contents
 
