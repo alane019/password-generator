@@ -23,6 +23,7 @@ Demo is viewable here: <https://alane019.github.io/password-generator>
 ## Screenshots
 
 ![EXAMPLE-SCREENSHOT](./screenshot.jpg)
+[![EXAMPLE-SCREENSHOT](./screenshot.jpg)](https://alane019.github.io/password-generator/)
 
 ## License
 
